@@ -5,7 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
-    <link rel="stylesheet" href="style.css" />
+    
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -23,23 +28,91 @@
             </div>
             <div class="sm:flex hidden">
                 <button
-                    class="cursor-pointer   px-5 py-2 rounded-xl font-semibold text-[18px] bg-linear-to-r/srgb from-red-500 bg-blue-500 text-white">
+                    class="flex items-center gap-3
+           px-10 py-4
+           rounded-full
+           text-white font-semibold text-lg
+           bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600
+           cursor-pointer
+           hover:scale-105 transition">
+          
                     Subscribe
+                     <i class="fa-solid fa-arrow-right mt-[3px]"></i> 
                 </button>
             </div>
         </nav>
         <!-- banner -->
         </div>
     </header>
+   
 
-    <!-- ai kaj baki roilo eita pore korbo -->
 
-    <!-- <div class="bg-[url('/assets/hero-bg.png')] relative bg-no-repeat  h-auto bg-center py-10 bg-cover ">
-       <div class="bg-[url('/assets/hero-circle.png')] bg-center bg-contain -mt-10 bg-no-repeat h-20 p-3 mx-auto">
-        <img class="h-full mx-auto" src="assets/microphone.png" alt="">
+    <!-- Banner starts  -->
+    <section class="w-full  bg-[url('./assets/hero-bg.png')] bg-cover bg-center pt-20 pb-24">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+
+            <!-- img  -->
+            <div class="relative inline-block mb-10">
+                <!-- Circle -->
+                <img src="./assets/hero-circle.png" alt=""
+                    class="w-64 sm:w-80 md:w-[420px] rounded-full border-8 border-[#2a186c]" />
+
+                <!-- microphone -->
+                <img src="./assets/microphone.png" alt="" class="w-16 sm:w-20 md:w-28 absolute top-1/2 left-1/2 
+               -translate-x-1/2 -translate-y-1/2 animate-spin-slow" />
+
+                <!-- new badge -->
+                <span class="absolute top-3 right-3 sm:top-4 sm:right-6
+               bg-[#00ff88] text-[#1a0b2e]
+               text-sm sm:text-base font-semibold
+               px-3 py-1 rounded-full uppercase">
+                    new
+                </span>
+            </div>
+
+            <!-- content -->
+            <h1 class="text-white font-extrabold
+             text-3xl sm:text-4xl md:text-6xl mb-4">
+                TechWave
+            </h1>
+
+            <p class="text-white/80 max-w-xl mx-auto
+             text-sm sm:text-base md:text-lg mb-8">
+                Your daily dose of tech insights, productivity hacks, and personal growth
+            </p>
+
+            <!-- buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="flex items-center gap-3
+           px-10 py-4
+           rounded-full
+           text-white font-semibold text-lg
+           bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600
+           cursor-pointer
+           hover:scale-105 transition">
+                    <i  class="fa-brands fa-spotify mt-[3px]"></i>
+                    Listen on Spotify
+                </button>
+
+                <button class="flex items-center gap-3
+           px-10 py-4
+           rounded-full
+           text-[#00ff88] font-semibold text-lg
+           border-2 border-[#00ff88]
+          cursor-pointer
+           
+           
+           hover:scale-105
+           transition">
+                    <i class="fa-regular fa-envelope mt-[3px]"></i>
+                    Subscribe
+                </button>
+            </div>
+
         </div>
-    </div> -->
+    </section>
 
+    <!-- Banner ends -->
     <main>
         <!-- about the podcast -->
         <section class="bg-[#1A0B2E] text-white pt-3">
@@ -204,16 +277,19 @@
             </div>
 
         </section>
-      <!-- meet the host -->
-        <section class="bg-[#1A0B2E] text-white pt-3">
+        <!-- meet the host -->
+        <section class="bg-[#1A0B2E] text-white pb-20 pt-3">
             <h2 class="font-bold lg:text-4xl text-xl sm:text-2xl text-center mb-5">Meet The Host</h2>
             <div class="max-w-5xl mx-5 lg:mx-auto p-5 sm:flex items-center gap-10 bg-[#351165] rounded-3xl">
                 <div>
                     <img class="w-[500px] " src="assets/host.png" alt="">
                 </div>
-                <div >
+                <div>
                     <h2 class="font-bold lg:text-4xl text-xl sm:text-2xl ">Alex Kumar</h2>
-                    <p class="text-gray-200 my-3">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                    <p class="text-gray-200 my-3">Tech entrepreneur, productivity expert, and lifelong learner. Alex has
+                        been in the tech industry for over 10 years, working with startups and Fortune 500 companies.
+                        Through TechWave, Alex shares insights from industry leaders and practical advice for anyone
+                        looking to grow in tech.</p>
                     <div class="flex gap-2 items-center">
                         <img src="assets/instagram.png" alt="">
                         <img src="assets/linkedin.png" alt="">
@@ -227,6 +303,68 @@
 
         </section>
     </main>
+
+    <footer
+  class="w-full bg-[url('./assets/footer-bg.png')] bg-cover bg-center py-20"
+>
+  <div
+    class="max-w-5xl mx-auto px-4 flex flex-col items-center gap-8 text-center"
+  >
+    <!-- logo -->
+    <img
+      src="assets/TechWave.png"
+      alt="TechWave"
+      class="w-30 sm:w-40 md:w-52"
+    />
+
+    <!-- links -->
+    <div
+      class="grid sm:flex sm:justify-between items-center gap-4 sm:mt-4  grid-cols-2 sm:grid-cols-4 "
+    >
+      <a
+        href="#"
+        class="flex items-center gap-1  text-[16px]  font-semibold text-gray-200
+               hover:text-white transition"
+      >
+        <img src="assets/spotify.png" alt="" class="h-4 w-4" />
+        Spotify
+      </a>
+
+      <a
+        href="#"
+        class="flex items-center gap-1  text-[16px]  font-semibold text-gray-200
+               hover:text-white transition"
+      >
+        <img src="assets/apple-podcast.png" alt="" class="h-4 w-4" />
+        Apple Podcast
+      </a>
+
+      <a
+        href="#"
+        class="flex items-center gap-1 text-[16px]  font-semibold text-gray-200
+               hover:text-white transition"
+      >
+        <img src="assets/youtube-podcast.png" alt="" class="h-4 w-4" />
+        YouTube Podcast
+      </a>
+
+      <a
+        href="#"
+        class="flex items-center gap-1  text-[16px]  font-semibold text-gray-200
+               hover:text-white transition"
+      >
+        <img src="assets/twitter.png" alt="" class="h-4 w-4" />
+        Twitter
+      </a>
+    </div>
+
+    <!-- text -->
+    <p class="text-sm text-gray-400 ">
+      © 2026 TechWave. All rights reserved.
+    </p>
+  </div>
+</footer>
+
 
 
 
